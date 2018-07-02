@@ -1,0 +1,123 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Modules.QuantumClasses</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="Modules.html"><font color="#ffffff">Modules</font></a>.QuantumClasses</strong></big></big></font></td
+></tr></table>
+    <p><tt>File&nbsp;that&nbsp;contians&nbsp;the&nbsp;classes&nbsp;necessary&nbsp;to&nbsp;simulate&nbsp;the&nbsp;quantum&nbsp;register.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="QuantumRun.html">QuantumRun</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="__builtin__.html#object">__builtin__.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="Modules.QuantumClasses.html#QuantumRegister">QuantumRegister</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="Modules.QuantumClasses.html#GroversAlgorithm">GroversAlgorithm</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="GroversAlgorithm">class <strong>GroversAlgorithm</strong></a>(<a href="Modules.QuantumClasses.html#QuantumRegister">QuantumRegister</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Class&nbsp;to&nbsp;use&nbsp;grover's&nbsp;algorithm&nbsp;which&nbsp;extends&nbsp;the&nbsp;Quantum&nbsp;Register<br>
+to&nbsp;contain&nbsp;methods&nbsp;specific&nbsp;to&nbsp;this&nbsp;algorithm,&nbsp;namely&nbsp;the&nbsp;conditional&nbsp;phase&nbsp;shift<br>
+and&nbsp;oracle&nbsp;operator.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="Modules.QuantumClasses.html#GroversAlgorithm">GroversAlgorithm</a></dd>
+<dd><a href="Modules.QuantumClasses.html#QuantumRegister">QuantumRegister</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="GroversAlgorithm-conditional_phase_shift"><strong>conditional_phase_shift</strong></a>(self)</dt><dd><tt>Updates&nbsp;the&nbsp;qubit&nbsp;array&nbsp;by&nbsp;performing&nbsp;the&nbsp;conditional&nbsp;phase&nbsp;shift&nbsp;gate.</tt></dd></dl>
+
+<dl><dt><a name="GroversAlgorithm-oracle"><strong>oracle</strong></a>(self, correct_state)</dt><dd><tt>Updates&nbsp;the&nbsp;the&nbsp;qubit&nbsp;array&nbsp;at&nbsp;the&nbsp;correct&nbsp;state&nbsp;index&nbsp;in&nbsp;order<br>
+to&nbsp;implement&nbsp;the&nbsp;oracle&nbsp;operator."</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="Modules.QuantumClasses.html#QuantumRegister">QuantumRegister</a>:<br>
+<dl><dt><a name="GroversAlgorithm-__init__"><strong>__init__</strong></a>(self, number_of_qubits)</dt><dd><tt>Initialises&nbsp;a&nbsp;quantum&nbsp;register&nbsp;with&nbsp;an&nbsp;array&nbsp;of&nbsp;qubit&nbsp;states.<br>
+&nbsp;<br>
+:param&nbsp;number_of_qubits:&nbsp;total&nbsp;number&nbsp;of&nbsp;qubits&nbsp;being&nbsp;simulated<br>
+:param&nbsp;states:&nbsp;total&nbsp;number&nbsp;of&nbsp;quantum&nbsp;states<br>
+:s_qubits:&nbsp;array&nbsp;of&nbsp;qubit&nbsp;states</tt></dd></dl>
+
+<dl><dt><a name="GroversAlgorithm-hadamard_gate"><strong>hadamard_gate</strong></a>(self)</dt><dd><tt>Method&nbsp;to&nbsp;implement&nbsp;the&nbsp;hadamard&nbsp;gate.</tt></dd></dl>
+
+<dl><dt><a name="GroversAlgorithm-measure_values"><strong>measure_values</strong></a>(self, figure_show_choice, figure_save_choice, i)</dt><dd><tt>Method&nbsp;to&nbsp;calculate&nbsp;and&nbsp;plot&nbsp;the&nbsp;probabilities.<br>
+&nbsp;<br>
+:param&nbsp;figure_show_choice:&nbsp;This&nbsp;is&nbsp;included&nbsp;to&nbsp;reduce&nbsp;memory&nbsp;usage&nbsp;<br>
+by&nbsp;only&nbsp;performing&nbsp;these&nbsp;operations&nbsp;if&nbsp;user&nbsp;selects.<br>
+:param&nbsp;figure_save_choice:&nbsp;Option&nbsp;to&nbsp;initialise&nbsp;figure&nbsp;objects&nbsp;if&nbsp;<br>
+user&nbsp;selects.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="Modules.QuantumClasses.html#QuantumRegister">QuantumRegister</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="QuantumRegister">class <strong>QuantumRegister</strong></a>(<a href="__builtin__.html#object">__builtin__.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Class&nbsp;for&nbsp;initialsing&nbsp;the&nbsp;quantum&nbsp;register.&nbsp;Included&nbsp;are&nbsp;general&nbsp;methods<br>
+to&nbsp;implement&nbsp;a&nbsp;Hadamard&nbsp;(H)&nbsp;gate&nbsp;and&nbsp;to&nbsp;measure&nbsp;and&nbsp;calculate&nbsp;probabilities.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="QuantumRegister-__init__"><strong>__init__</strong></a>(self, number_of_qubits)</dt><dd><tt>Initialises&nbsp;a&nbsp;quantum&nbsp;register&nbsp;with&nbsp;an&nbsp;array&nbsp;of&nbsp;qubit&nbsp;states.<br>
+&nbsp;<br>
+:param&nbsp;number_of_qubits:&nbsp;total&nbsp;number&nbsp;of&nbsp;qubits&nbsp;being&nbsp;simulated<br>
+:param&nbsp;states:&nbsp;total&nbsp;number&nbsp;of&nbsp;quantum&nbsp;states<br>
+:s_qubits:&nbsp;array&nbsp;of&nbsp;qubit&nbsp;states</tt></dd></dl>
+
+<dl><dt><a name="QuantumRegister-hadamard_gate"><strong>hadamard_gate</strong></a>(self)</dt><dd><tt>Method&nbsp;to&nbsp;implement&nbsp;the&nbsp;hadamard&nbsp;gate.</tt></dd></dl>
+
+<dl><dt><a name="QuantumRegister-measure_values"><strong>measure_values</strong></a>(self, figure_show_choice, figure_save_choice, i)</dt><dd><tt>Method&nbsp;to&nbsp;calculate&nbsp;and&nbsp;plot&nbsp;the&nbsp;probabilities.<br>
+&nbsp;<br>
+:param&nbsp;figure_show_choice:&nbsp;This&nbsp;is&nbsp;included&nbsp;to&nbsp;reduce&nbsp;memory&nbsp;usage&nbsp;<br>
+by&nbsp;only&nbsp;performing&nbsp;these&nbsp;operations&nbsp;if&nbsp;user&nbsp;selects.<br>
+:param&nbsp;figure_save_choice:&nbsp;Option&nbsp;to&nbsp;initialise&nbsp;figure&nbsp;objects&nbsp;if&nbsp;<br>
+user&nbsp;selects.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

@@ -1,0 +1,53 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module QuantumRun</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>QuantumRun</strong></big></big></font></td
+></tr></table>
+    <p><tt>Main Running Function. Everything runs from this file and links to a total of 5 other 
+modules in the modules directory, there is a lot of stuff so just to keep organised.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="Modules.Grapher.html">Modules.Grapher</a><br>
+<a href="Modules.Preliminary.html">Modules.Preliminary</a><br>
+</td><td width="25%" valign=top><a href="Modules.Imports.html">Modules.Imports</a><br>
+<a href="Modules.QuantumClasses.html">Modules.QuantumClasses</a><br>
+</td><td width="25%" valign=top><a href="Modules.AuxiliaryClasses.html">Modules.AuxiliaryClasses</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-desired_state"><strong>desired_state</strong></a>(qubit_number, choose_state, test)</dt><dd><tt>Function&nbsp;for&nbsp;user&nbsp;to&nbsp;pick&nbsp;a&nbsp;desired&nbsp;state&nbsp;for&nbsp;grovers&nbsp;algorithm.&nbsp;This<br>
+defaults&nbsp;to&nbsp;the&nbsp;middle&nbsp;state&nbsp;if&nbsp;the&nbsp;user&nbsp;does&nbsp;not&nbsp;wish&nbsp;to&nbsp;pick&nbsp;a&nbsp;state.<br>
+&nbsp;<br>
+:param&nbsp;qubit_number:&nbsp;The&nbsp;number&nbsp;of&nbsp;qubits&nbsp;which&nbsp;are&nbsp;being&nbsp;simulated.<br>
+:param&nbsp;choose_state:&nbsp;Boolean&nbsp;to&nbsp;determine&nbsp;whether&nbsp;the&nbsp;state&nbsp;is&nbsp;being&nbsp;chosen&nbsp;manually&nbsp;or&nbsp;not.<br>
+:param&nbsp;test:&nbsp;An&nbsp;int&nbsp;used&nbsp;to&nbsp;print&nbsp;the&nbsp;message&nbsp;about&nbsp;the&nbsp;default&nbsp;option&nbsp;at&nbsp;the&nbsp;correct&nbsp;point.</tt></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><tt>The&nbsp;function&nbsp;which&nbsp;runs&nbsp;every&nbsp;aspect&nbsp;of&nbsp;the&nbsp;program.</tt></dd></dl>
+ <dl><dt><a name="-quantum_loop"><strong>quantum_loop</strong></a>(qubits, chosen_state, test, data_file, figure_show_choice, figure_save_choice, calculate_or_manual)</dt><dd><tt>Function&nbsp;to&nbsp;loop&nbsp;the&nbsp;qauntum&nbsp;computation&nbsp;algorithms&nbsp;and&nbsp;where<br>
+the&nbsp;steps&nbsp;themselves&nbsp;for&nbsp;grover's&nbsp;algorithms&nbsp;are&nbsp;performed.<br>
+&nbsp;<br>
+:param&nbsp;chosen_state:&nbsp;&nbsp;The&nbsp;state&nbsp;which&nbsp;is&nbsp;being&nbsp;searched&nbsp;for.<br>
+:param&nbsp;test:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number&nbsp;of&nbsp;simulations&nbsp;being&nbsp;performed.<br>
+:param&nbsp;data_file:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data&nbsp;file&nbsp;object&nbsp;where&nbsp;results&nbsp;are&nbsp;saved.<br>
+:figure_show_choice:&nbsp;&nbsp;If&nbsp;figures&nbsp;are&nbsp;displayed.<br>
+:figure_save_choice:&nbsp;&nbsp;If&nbsp;figures&nbsp;are&nbsp;saved.<br>
+:calculate_or_manual:&nbsp;To&nbsp;run&nbsp;the&nbsp;simulation&nbsp;for&nbsp;a&nbsp;custom&nbsp;number&nbsp;of&nbsp;<br>
+cycles,&nbsp;instead&nbsp;of&nbsp;the&nbsp;optimal&nbsp;number.</tt></dd></dl>
+ <dl><dt><a name="-read_qubit_file"><strong>read_qubit_file</strong></a>()</dt><dd><tt>Function&nbsp;to&nbsp;create&nbsp;Qubit&nbsp;File&nbsp;Object.&nbsp;Also&nbsp;asks&nbsp;how&nbsp;many&nbsp;tests&nbsp;are&nbsp;to<br>
+be&nbsp;run&nbsp;so&nbsp;that&nbsp;different&nbsp;numbers&nbsp;of&nbsp;qubits&nbsp;can&nbsp;be&nbsp;easily&nbsp;compared&nbsp;without<br>
+rerunning&nbsp;the&nbsp;entire&nbsp;program.</tt></dd></dl>
+</td></tr></table>
+</body></html>
